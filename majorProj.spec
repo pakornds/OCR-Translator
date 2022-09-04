@@ -5,7 +5,7 @@ block_cipher = None
 
 
 a = Analysis(
-    ['OCRREAL.py'],
+    ['majorProj.py'],
     pathex=[],
     binaries=[],
     datas=[('OCR', 'OCR')],

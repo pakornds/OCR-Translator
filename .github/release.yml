@@ -1,0 +1,22 @@
+#name
+name: Release
+
+#run on commit tag which begins with "v"
+on:
+  push:
+    tags:
+      - "v*.*.*"
+#do
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Release
+        uses: softprops/action-gh-release@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          tag_name: ${{ github.run_number }}
+          release_name: ${{ github.run_number }}
