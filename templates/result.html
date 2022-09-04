@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+
+{% block css %}
+<link rel="stylesheet" href="{{url_for('static', filename='css/result.css')}}">
+{% endblock %}
+
+{% block content %}
+
+<div>
+    <h2 class="text">Result</h2>
+    <p class="text">{{ result[0] }}</p>
+    <p class="text">{{ result[1] }}</p>
+</div>
+
+<a href="/" class="link">
+    <div class="button">
+        Go Back
+    </div>
+</a>
+
+
+{% endblock %}

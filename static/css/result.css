@@ -1,0 +1,31 @@
+body {
+    background-color: bisque;
+}
+
+.button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 20px;
+    margin-left: 80px !important;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.text {
+    padding-left: 20px;
+}
+
+.link {
+    color: aliceblue;
+}
+
+a.mainButton,
+a.mainButton:hover,
+a.mainButton:link {
+    text-decoration: none;
+}
